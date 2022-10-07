@@ -1,0 +1,132 @@
+:root{
+  font-family: Arial, Helvetica, sans-serif;
+}
+::-webkit-scrollbar {
+  display: none;
+}
+body, html {  
+  border: 0;
+  padding: 0;
+  /* padding: 0.03rem; */
+  box-sizing: border-box;
+  width: 100vw;
+  height: 100vw;
+  align-items: center;
+}
+
+header{
+  background-color: white;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  
+}
+header form {  
+  display: flex;
+  background-color: white;
+  flex: 2;
+}
+.inicio_desktop{
+  color: white;
+  background-color: black;
+}
+.todos_pines {
+  flex: 0.5;
+  border: 2px solid black;
+}
+
+.input_search {
+  flex: 3;
+  border: 2px solid black;
+}
+
+.logo {
+  height: 24px;
+  width: 24px;
+}
+.inicio_mobil{
+  display:none;
+}
+button, select{
+  border-radius: 16px;
+  color: black;
+  padding: 16px;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  margin: 40px;
+  position: inherit;
+}
+
+a {
+  color: black;
+  font-weight: bold;
+  text-decoration: none;
+  padding: 20px 10px 10px 10px;  
+  margin: 0 10px;
+  border-bottom: 4px solid transparent;
+}
+
+a:hover, a:active {
+  border-bottom: 4px solid black;
+}
+section {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+input, select {
+  padding: 16px;
+  border: none;
+  border-radius: 16px;
+}
+
+span {
+  width: 24px;
+  height: 24px;
+  font-size: 20px;
+}
+
+.inicio_mobil {
+  display: none;
+
+}
+select option #inicio{
+  color:red;
+}
+
+.grid {
+  columns: 6 200px;
+  column-gap: 1rem;
+  
+}
+.arriba{
+  background-image:url("./assets/Fondo.jpg");
+}
+img{
+  border-radius: 15px;
+  margin-bottom: 0.5rem;
+  max-width: 100%;
+}
+
+@media (max-width: 60rem) {
+
+  .inicio_mobil {
+    display: flex;
+  }
+
+  .inicio_desktop{
+    display: none;
+  }
+  .hoy_desktop {
+    display: none;
+  }
+  .crear_desktop{
+    display: none;
+  }
+
+
+}
